@@ -6,10 +6,27 @@
     <title>StreamBox</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
+<script>
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector("nav");
+
+hamburger.addEventListener("click", () => {
+    if (nav.style.display === "flex") {
+        nav.style.display = "none";
+    } else {
+        nav.style.display = "flex";
+    }
+});
+</script>
+
 <body>
 
 <header>
     <h1>StreamBox</h1>
+
+    <div class="hamburger">☰</div>
+
     <nav>
         <a href="#">Home</a>
         <a href="#">Shows</a>
@@ -68,7 +85,7 @@
     <article>
         <img src="https://images.pexels.com/photos/3771830/pexels-photo-3771830.jpeg">
         <h3>Funny Moments</h3>
-        <p>Pure humor and hilarious scenes</p>
+        <p>Pure humour and hilarious scenes </p>
     </article>
 
     <article>
